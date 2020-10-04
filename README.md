@@ -2,7 +2,7 @@
 Flow2-week2-handin
 
 
-Generally had problems with deployment but tried anyway.
+Generally had problems with deployment but tried anyway (not working though)
 
 Tuesday-exercises: Done
 
