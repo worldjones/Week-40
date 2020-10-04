@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack/Babel-demo</title>
+</head>
+
+<body>
+  <ul id="menu" class="header">
+    <li><a href="" id="about">About</a></li>
+    <li><a href="" id="ex1">Ex1</a></li>
+    <li><a href="" id="ex2">Ex2</a></li>
+    <li><a href="" id="ex3">Ex3</a></li>
+  </ul>
+
+  <div class="content">
+
+    <!-- This is were you should place your basic HTML for exercise-1 -->
+    <div id="ex1_html" style="display:none;">
+      <h3>Exercise 1</h3>
+      <p>Add your basic HTML for Exercise 1 here</p>
+      <ul id="jokes"></ul>
+      <br>
+      <form>
+        Joke ID: <input type="number" id="singleJokeNumberInput">
+        <button id="singleJokeNumberInputBtn">Get joke</button><br>
+        Joke: <input type="text" id="addJokeTextInput">
+        <button id="addJokeTextInputBtn">Add joke</button>
+      </form>
+      <p id="singleJoke"></p>
+      
+    </div>
+    <!-- End of HTML for exercise-1 -->
+
+
+
+    <!-- This is were you should place your basic HTML for exercise-2 -->
+    <div id="ex2_html" style="display:none;">
+      <h3>Exercise 2</h3>
+      <p id="ex2p">Add your basic HTML for Exercise 2 here</p>
+      <form>
+        <button id="fetchQuoteBtn">Fetch quote</button>
+      </form>
+      <p id="fetchedQuote"></p>
+    </div>
+    <!-- End of HTML for exercise-2 -->
+
+
+    <!-- This is were you should place your basic HTML for exercise-3 -->
+    <div id="ex3_html" style="display:none;">
+      <h3>Ex-3</h3>
+      <p>Add your basic HTML for Exercise 3 here</p>
+
+      <div class="row" style="min-height: 5em;"">
+      <div class="col-md-8 pre-scrollable" style="background-color: lightgrey;">
+        <h5>All Users</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Age</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Email </th>
+          </thead>
+          <tbody id="allUserRows">
+          <tbody>
+        </table>
+        <form>
+          <button id="reloadData">Reload</button>
+        </form>
+      </div>
+      <div class="col-md-4" style="background-color: powderblue;">
+        <h5>Find User</h5>
+        <form>
+          <label for="singleUserIdInput">ID:</label>
+          <input type="number" id="singleUserIdInput">
+          <button id="singleUserIdInputBtn">Get user</button>
+        </form>
+        <p id="singleUser"></p>
+        <p id="errorGet"></p> 
+      </div>
+    </div>
+    <div class="row" style="min-height: 5em;">
+      <div class="col-md-4" style="background-color: powderblue;">
+        <h5>Add User</h5>
+        <form class="form-horizontal">
+          <label class="control-label col-sm-2" for="userAgeInput">Age:</label>
+          <input id="userAgeInput"><br>
+          <label class="control-label col-sm-2" for="userNameInput">Name:</label>
+          <input id="userNameInput"><br>
+          <label class="control-label col-sm-2" for="userGenderInput">Gender:</label>
+          <input id="userGenderInput"><br>
+          <label class="control-label col-sm-2" for="userEmailInput">Email:</label>
+          <input id="userEmailInput"><br>
+          <button id="addUserBtn">Add User</button>
+        </form><br>
+        <p style="color:red" id="errorAdd"></p>
+      </div>
+      <div class="col-md-4" style="background-color: lightgrey;">
+        <h5>Edit User</h5>
+        <form class="form-horizontal">
+          <label class="control-label col-sm-2" for="userEditIdInput">ID:</label>
+          <input id="userEditIdInput"><br>
+          <label class="control-label col-sm-2" for="userEditAgeInput">Age:</label>
+          <input id="userEditAgeInput"><br>
+          <label class="control-label col-sm-2" for="userEditNameInput">Name:</label>
+          <input id="userEditNameInput"><br>
+          <label class="control-label col-sm-2" for="userEditGenderInput">Gender:</label>
+          <input id="userEditGenderInput"><br>
+          <label class="control-label col-sm-2" for="userEditEmailInput">Email:</label>
+          <input id="userEditEmailInput"><br>
+          <button id="editUserBtn">Edit User</button>
+        </form><br>
+        <p style="color:red" id="errorEdit"></p>
+      </div>
+      <div class="col-md-4" style="background-color: powderblue;">
+        <h5>Delete User</h5>
+        <form>
+          <label for="deleteUserIdInput">ID:</label>
+          <input type="number" id="deleteUserIdInput">
+          <button id="deleteUserIdInputBtn">Delete User</button>
+        </form><br>
+        <p style="color:red" id="errorDelete"></p>
+      </div>
+    </div>
+  </div>
+  <!-- End of HTML for exercise-3 -->
+
+  <!---- HTML for the About page -->
+  <div id="about_html" style="display:none;">
+    <h3>About</h3>
+    <p>Watch the small video given as intro to this code, BEFORE you start using it</p>
+  </div>
+  <!-- End of HTML for ABOUT Page -->
+
+  </div>
+
+  <!-- #################################################################-->
+  <!-- IMPORTANT  DO NOT IMPORT ANY JavaScript in this file by YOURSELF -->
+  <!-- #################################################################-->
+
+</body>
+
+</html>
